@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha primeira tabela</title>
+    <style>
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            position: relative;
+            width: 500px;
+            border-collapse: collapse;
+        }
+        td, th{
+            border: 1px solid black;
+           padding: 10px;
+        }
+        thead,tfoot{
+            background-color: gray;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+            /*
+            configuração para fixar cabeçalho da tabela 
+            */
+        }
+        .number {
+            text-align: right;
+        }
+        .estado{
+            text-align: left;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+            /*configuração zebrada no tbody
+            odd - impar
+            even - par */
+
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Uso de tabelas grandes
+    </h1>
+    <!--
+        HIERARQUIA DE TABELAS GRANDE 
+        TABLE 
+            CAPTION - LEGENDA 
+            THEAD - CABEÇALHO
+                TR -LINHA, TD-DADO ,TH- TITULO  
+            TBODY - CORPO
+                TR, TD, TH 
+            TFOOT - RODAPÉ
+                TR, TD, TH 
+    -->
+    <table>
+        <caption>
+            População das Unidades Federativas 
+        </caption>
+        <thead>
+            <tr>
+                    <th scope="col">ESTADO</th>
+                    <th scope="col" style="width: 50px;">POPULAÇÃO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th class="estado">São Paulo</th>
+                <td class="number">45.919.049</td>
+            </tr>
+            <tr>
+                <th class="estado">Rio de Janeiro</th>
+                <td class="number">17.264.943</td>
+            </tr>
+            <tr>
+                <th class="estado">Minas Gerais</th>
+                <td class="number">21.168.791</td>
+            </tr>
+            <tr>
+                <th class="estado">Rio Grande do Sul</th>
+                <td class="number">11.377.239</td>
+            </tr>
+            <tr>
+                <th class="estado">Santa Catarina</th>
+                <td class="number">7.164.788</td>
+            </tr>
+            <th class="estado">Rio de Janeiro</th>
+            <td class="number">17.264.943</td>
+        </tr>
+        <tr>
+            <th class="estado">Minas Gerais</th>
+            <td class="number">21.168.791</td>
+        </tr>
+        <tr>
+            <th class="estado">Rio Grande do Sul</th>
+            <td class="number">11.377.239</td>
+        </tr>
+        <tr>
+            <th class="estado">Santa Catarina</th>
+            <td class="number">7.164.788</td>
+        </tr>
+        <th class="estado">Rio de Janeiro</th>
+        <td class="number">17.264.943</td>
+    </tr>
+    <tr>
+        <th class="estado">Minas Gerais</th>
+        <td class="number">21.168.791</td>
+    </tr>
+    <tr>
+        <th class="estado">Rio Grande do Sul</th>
+        <td class="number">11.377.239</td>
+    </tr>
+    <tr>
+        <th class="estado">Santa Catarina</th>
+        <td class="number">7.164.788</td>
+    </tr>
+                    <th class="estado">Rio de Janeiro</th>
+                <td class="number">17.264.943</td>
+            </tr>
+            <tr>
+                <th class="estado">Minas Gerais</th>
+                <td class="number">21.168.791</td>
+            </tr>
+            <tr>
+                <th class="estado">Rio Grande do Sul</th>
+                <td class="number">11.377.239</td>
+            </tr>
+            <tr>
+                <th class="estado">Santa Catarina</th>
+                <td class="number">7.164.788</td>
+            </tr>
+            <th class="estado">Rio de Janeiro</th>
+            <td class="number">17.264.943</td>
+        </tr>
+        <tr>
+            <th class="estado">Minas Gerais</th>
+            <td class="number">21.168.791</td>
+        </tr>
+        <tr>
+            <th class="estado">Rio Grande do Sul</th>
+            <td class="number">11.377.239</td>
+        </tr>
+        <tr>
+            <th class="estado">Santa Catarina</th>
+            <td class="number">7.164.788</td>
+        </tr>
+        <th class="estado">Rio de Janeiro</th>
+        <td class="number">17.264.943</td>
+    </tr>
+    <tr>
+        <th class="estado">Minas Gerais</th>
+        <td class="number">21.168.791</td>
+    </tr>
+    <tr>
+        <th class="estado">Rio Grande do Sul</th>
+        <td class="number">11.377.239</td>
+    </tr>
+    <tr>
+        <th class="estado">Santa Catarina</th>
+        <td class="number">7.164.788</td>
+    </tr>
+    <th class="estado">Rio de Janeiro</th>
+    <td class="number">17.264.943</td>
+</tr>
+<tr>
+    <th class="estado">Minas Gerais</th>
+    <td class="number">21.168.791</td>
+</tr>
+<tr>
+    <th class="estado">Rio Grande do Sul</th>
+    <td class="number">11.377.239</td>
+</tr>
+<tr>
+    <th class="estado">Santa Catarina</th>
+    <td class="number">7.164.788</td>
+</tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <th class="number"><strong>00000</strong></th>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae alias inventore ea, obcaecati nostrum cum laudantium et rerum dolor reiciendis voluptates! Commodi ipsam sint hic ullam dolore veniam cum totam!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint harum quas provident beatae aspernatur ipsum optio doloremque est vel repellendus, ipsam fugiat aperiam recusandae excepturi saepe, modi perspiciatis voluptas nulla.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste consequuntur odio ab earum corrupti neque ipsum quod quaerat, illum quam cum modi! Eligendi doloremque facere numquam nam dolores voluptatum saepe.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iste eaque ullam ex, modi sequi excepturi unde quibusdam magni molestias atque ipsam aliquam expedita earum aspernatur totam dolor culpa fugit.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. At veniam error nobis laboriosam minus officiis molestias sed ipsam est, fuga doloremque odit facilis nam accusantium eligendi. Quisquam eos consectetur dolorum.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt eaque et aut voluptatibus accusamus autem cum fugit iure laudantium earum in quo, quasi recusandae provident aperiam libero. Quam, hic molestiae!Lorem
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dolores voluptates sunt tempore eveniet repellendus quaerat enim recusandae quisquam corporis perspiciatis! Hic iusto corrupti delectus vitae laboriosam? Obcaecati, saepe possimus.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate voluptatibus autem maxime magni, suscipit aliquid itaque nisi odit veniam numquam distinctio recusandae. Inventore non ducimus veniam debitis expedita nesciunt modi.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint suscipit quo expedita laudantium odio quae, quidem nostrum illo hic nam, ad recusandae incidunt est vel fugiat tempore velit facilis saepe!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid magnam, delectus fugit exercitationem eligendi porro voluptatibus illum dolorem! Minima, saepe necessitatibus. Maxime quam ullam cupiditate provident architecto aut assumenda animi!
+        </p>
+    </p>
+</body>
+</html>

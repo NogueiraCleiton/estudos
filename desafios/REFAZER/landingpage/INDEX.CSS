@@ -1,0 +1,17 @@
+@charset "UTF-8";
+body{
+    background-color: black;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    border-radius: 150px;
+}
+p{
+    color: white;
+    font-size: 20pt;
+}
+div{
+    text-align:center;
+}
