@@ -6,7 +6,7 @@ rastreador = HandDetector(detectionCon=0.8, maxHands=2)
 
 while True:
     sucesso, imagem = webcam.read()
-    coordenadas, imagem_maos =rastreador.findHands(imagem)
+    coordenadas, imagem_maos = rastreador.findHands(imagem)
     cv2.imshow("Projeto IA",imagem)
     
     if cv2.waitKey(1)!= - 1:
