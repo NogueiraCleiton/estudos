@@ -341,3 +341,14 @@ footer .line-footer p i{
 footer .line-footer p a{
     color: #FFF;
 }
+
+@media screen and (max-width: 1020){
+    /* geral */
+    .flex{
+        flex-direction: column;
+    }
+    /* cabecalho */
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+}
