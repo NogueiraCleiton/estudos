@@ -6,7 +6,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;   
-    color: #FFF;
 }
 body{
     background-color: #000000;
@@ -105,8 +104,14 @@ section.topo-do-site .flex{
     font-size: 38px;
     line-height: 40px;
 }
-.topo-do-site p {
+
+.topo-do-site .txt-topo-do-site h1 span{
+    color: #00ff08;
+}
+
+.topo-do-site .txt-topo-site p {
     color: #fff;
+    margin: 40px 0px;
 }
 .topo-do-site span{
     color: #00ff08;
@@ -157,4 +162,56 @@ section.especialidades .flex{
 .especialidades .especialidades-box h3{
     font-size: 28px;
     margin: 15px 0;
+    color: #FFF;
 }
+
+.especialidades .especialidades-box p{
+    color: #FFF;
+}
+
+/* SOBRE */
+
+section.sobre{
+   padding: 80px 4%;
+}
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+section.sobre .flex img{
+    width: 300px;
+    height: 300px;
+}
+.sobre .txt-sobre{
+    color: #fff;
+
+}
+
+.txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+
+.txt-sobre h2 span{
+    color: #00ff08;
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.sobre .txt-sobre .btn-social button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    background-color: #00ff08;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0px 5px;
+}
+
